@@ -11,12 +11,11 @@ app.use(express.json());
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: 'localhost',        // Host
-  user: 'root',             // Username
-  password: '',             // Password
-  database: 'book_list'     // Database name
+  host: 'localhost',
+  user: 'root', // replace with your MySQL username
+  password: '', // replace with your MySQL password
+  database: 'book_list' // replace with your database name
 });
-
 
 // Connect to MySQL
 db.connect((err) => {
@@ -49,6 +48,41 @@ app.delete('/books/:id', (req, res) => {
   db.query(query, [id], (err, result) => {
     if (err) return res.status(500).send(err);
     res.status(204).send();
+  });
+});
+
+// API endpoint to update a book
+app.put('/books/:id', (req, res) => {
+  const { id } = req.params;
+  const { title, status, lastChapter } = req.body;
+  let query = 'UPDATE books SET ';
+  const values = [];
+
+  if (title) {
+    query += 'title = ?, ';
+    values.push(title);
+  }
+  if (status) {
+    query += 'status = ?, ';
+    values.push(status);
+  }
+  if (lastChapter) {
+    query += 'lastChapter = ?, ';
+    values.push(lastChapter);
+  }
+
+  // Hapus karakter koma terakhir
+  query = query.slice(0, -2);
+
+  query += ' WHERE id = ?';
+  values.push(id);
+
+  db.query(query, values, (err, result) => {
+    if (err) return res.status(500).send(err);
+    if (result.affectedRows === 0) {
+      return res.status(404).send({ message: 'Book not found' });
+    }
+    res.status(200).send({ id, title, status, lastChapter });
   });
 });
 

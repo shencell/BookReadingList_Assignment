@@ -25,14 +25,20 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
   min-width: 320px;
   min-height: 100vh;
+  padding: 20px; /* Add some padding */
+  background: linear-gradient(to bottom, #242424, #1c1c1c); /* Gradient background */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Center the heading */
 }
 
 button {
@@ -43,11 +49,14 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: white; /* Ensure button text is visible */
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
+  margin: 5px; /* Space between buttons */
 }
 button:hover {
   border-color: #646cff;
+  background-color: #2a2a2a; /* Darken button on hover */
 }
 button:focus,
 button:focus-visible {
@@ -64,5 +73,6 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    color: #000; /* Dark text for light mode */
   }
 }

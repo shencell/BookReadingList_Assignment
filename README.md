@@ -21,6 +21,19 @@ Project - Praktikum Pemrograman Web
 ![image](https://github.com/user-attachments/assets/ae7e63ce-34e9-44cf-83e3-74b29e32e016)
 
 ---
+## *About Project*
+Project ini merupakan aplikasi berbasis web yang dirancang untuk membantu pengguna dalam mengelola daftar buku yang sedang mereka baca. Aplikasi ini memungkinkan pengguna untuk menambahkan, memperbarui, dan menghapus buku dari daftar mereka dengan mudah.
+### Fitur Utama
+- Daftar Buku: Pengguna dapat melihat semua buku yang sedang dibaca dalam format tabel yang terorganisir.
+- Menambahkan Buku: Terdapat tombol "Add Book" yang memungkinkan pengguna untuk menambahkan buku baru ke dalam daftar.
+- Memperbarui Informasi: Pengguna dapat memperbarui judul buku dan informasi bab terakhir yang dibaca.
+- Menghapus Buku: Terdapat opsi untuk menghapus buku dari daftar jika sudah selesai dibaca.
+### Teknologi yang Digunakan
+- Frontend: HTML, CSS, dan JavaScript untuk membuat antarmuka pengguna yang responsif dan interaktif.
+- Backend: PHP untuk menangani logika aplikasi dan interaksi dengan basis data.
+- Basis Data: MySQL untuk menyimpan informasi buku, termasuk judul, status (ongoing/completed), dan bab terakhir yang dibaca.
+  
+---
 ## *Input and Update*
 ### Add Book
 ![image](https://github.com/user-attachments/assets/f16917f8-3998-4015-819d-49e11fc47a4b)
@@ -30,10 +43,8 @@ Project - Praktikum Pemrograman Web
 ### Delete Book
 ![image](https://github.com/user-attachments/assets/77d497a2-0eb7-4158-b823-d059163a02ae)
 ![image](https://github.com/user-attachments/assets/24c18ed6-190b-47ab-a814-64c6a597ec08)
-
 ### Results
 ![image](https://github.com/user-attachments/assets/4bc82ef2-f9e9-4872-b320-b970ea769d25)
-
 ### In pypmyadmin
 ![image](https://github.com/user-attachments/assets/e8a2d5bc-1530-4268-b16f-4e430876ca96)
 

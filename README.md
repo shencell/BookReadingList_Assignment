@@ -6,10 +6,9 @@ Project - Praktikum Pemrograman Web
 1. Fabian Adjie W. (50422476)
 2. Hafshoh Nur Adzikra (50422640) 
 3. Sandy Wicaksono D. (51422507)  
- 
 
-HOW TO RUN (?)
---------------
+---
+## *HOW TO RUN*
 1. Open 'Library' folder then on search bar type 'cmd' and enter
 2. In command prompt type 'code .' then enter
 3. In VScode add 2 new terminal

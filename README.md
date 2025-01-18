@@ -23,3 +23,18 @@ Project - Praktikum Pemrograman Web
 ---
 ## *Input and Update*
 ### Add Book
+![image](https://github.com/user-attachments/assets/f16917f8-3998-4015-819d-49e11fc47a4b)
+![image](https://github.com/user-attachments/assets/0d43c4fa-3ab0-46c1-94f8-668733d6615f)
+### Update Book
+![image](https://github.com/user-attachments/assets/fa9034a0-3fdb-4b04-ad12-bc358df1dc04)
+### Delete Book
+![image](https://github.com/user-attachments/assets/77d497a2-0eb7-4158-b823-d059163a02ae)
+![image](https://github.com/user-attachments/assets/24c18ed6-190b-47ab-a814-64c6a597ec08)
+
+### Results
+![image](https://github.com/user-attachments/assets/4bc82ef2-f9e9-4872-b320-b970ea769d25)
+
+### In pypmyadmin
+![image](https://github.com/user-attachments/assets/e8a2d5bc-1530-4268-b16f-4e430876ca96)
+
+
